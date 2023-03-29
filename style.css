@@ -14,30 +14,35 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 10%;
+    padding: 30px 10%;
     width: 100%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    justify-content: center;
 
 }
 
 .logo {
     font-size: 25px;
+    text-align: center;
     color: white;
     text-decoration: none;
     font-weight: 600;
     pointer-events: none;
     opacity: 0;
     animation: slideTop 1s ease forwards;
+    
+    
 }
 
-.navbar a {
+
+/*.navbar a {
     display: inline-block;
     font-size: 18px;
     color: white;
@@ -55,14 +60,15 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+*/
 
 .home {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    justify-content: space-between;
+    justify-content: center;
     padding: 70px 10% 0;
 }
 
@@ -72,30 +78,35 @@ body {
 }
 
 .home-content h1 {
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .7s;
+    text-align: center;
 
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 23px;
     font-weight: 700;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
+    text-align: center;
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 10px;
     margin: 20px 0 40px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1.3s;
+    text-align: center;
 }
+
+
 
 .btn {
     display: inline-flex;
@@ -114,6 +125,12 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 1.8s;
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 0 0;
 }
 
 .btn::before {
@@ -219,7 +236,13 @@ body {
     animation: slideBottom 1s ease forwards;
     animation-delay: 2.1s;
 }
-
+.home-sci {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    margin: 30px;
+}
 
 
 .home-img {
