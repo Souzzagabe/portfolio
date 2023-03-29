@@ -37,8 +37,8 @@ body {
     pointer-events: none;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    
-    
+
+
 }
 
 
@@ -236,6 +236,7 @@ body {
     animation: slideBottom 1s ease forwards;
     animation-delay: 2.1s;
 }
+
 .home-sci {
     display: flex;
     flex-wrap: nowrap;
@@ -251,6 +252,7 @@ body {
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2.1s, 3.1s;
+    margin: auto;
 }
 
 .home-img .foto {
@@ -390,9 +392,11 @@ body {
 }
 
 @keyframes circleRotate {
-    0%{
+    0% {
         transform: rotate(0);
     }
-    100% {transform: rotate(360deg);
+
+    100% {
+        transform: rotate(360deg);
     }
 }
